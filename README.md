@@ -4,7 +4,7 @@ Interactive visualization of revenue and employee growth trajectories for 39 com
 
 ## Live app
 
-**https://[username].github.io/Benchmarking/**
+**https://eduardo3rd.github.io/benchmarking/**
 
 (Replace `[username]` with your GitHub username.)
 
