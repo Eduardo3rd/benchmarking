@@ -115,15 +115,12 @@ const C = [
   { n:"Luminar", f:2012, c:"#DAA520", t:"Lidar for Autonomous Vehicles", cat:"Automotive",
     d:[{y:2020,r:14},{y:2021,r:32},{y:2022,r:41},{y:2023,r:70},{y:2024,r:75}],
     e:[{y:2020,e:350},{y:2021,e:500},{y:2022,e:700},{y:2023,e:800},{y:2024,e:700}]},
-  { n:"Lumafield", f:2019, c:"#7B68EE", t:"Industrial CT Scanning", cat:"Industrial",
-    d:[{y:2020,r:1},{y:2021,r:3},{y:2022,r:9},{y:2023,r:15},{y:2024,r:23}],
-    e:[{y:2021,e:15},{y:2022,e:40},{y:2023,e:80},{y:2024,e:130}]},
 ];
 
 const CATEGORIES = ["Medical Devices","Computing","Automotive","Aerospace","Consumer","Energy","Security & Defense","Industrial"];
 
 /* Smoothed P25/P50/P75 by years-from-founding (ex NVIDIA/Tesla/SpaceX, N≥4, log-space 3pt MA)
-   Updated Feb 2026 with 39 companies, 676 revenue data points, 457 employee data points */
+   Updated Feb 2026 with 38 companies, 671 revenue data points, 453 employee data points */
 const TREND = [
   {x:2,lo:2,mid:3,hi:5,n:9},{x:3,lo:2,mid:10,hi:15,n:13},{x:4,lo:5,mid:13,hi:50,n:17},
   {x:5,lo:11,mid:27,hi:76,n:22},{x:6,lo:14,mid:51,hi:142,n:22},{x:7,lo:27,mid:100,hi:171,n:23},
@@ -322,7 +319,7 @@ export default function App() {
       <div style={{marginBottom:16}}>
         <div style={{fontFamily:"'JetBrains Mono',monospace",fontSize:10,textTransform:"uppercase",letterSpacing:2.5,color:"#bbb",marginBottom:6}}>{metric==="employees"?"Workforce Growth Trajectories":"Revenue Growth Trajectories"}</div>
         <h1 style={{fontFamily:"'Instrument Serif',Georgia,serif",fontSize:36,fontWeight:400,lineHeight:1.1,margin:"0 0 6px",letterSpacing:-0.6,color:"#111"}}>Hardware + Software</h1>
-        <p style={{fontSize:14,color:"#999",margin:0}}>39 combined hardware/software businesses · {metric==="employees"?"Annual employee count":"Annual revenue ($M)"} · Log scale</p>
+        <p style={{fontSize:14,color:"#999",margin:0}}>38 combined hardware/software businesses · {metric==="employees"?"Annual employee count":"Annual revenue ($M)"} · Log scale</p>
       </div>
 
       <div style={{display:"flex",gap:10,marginBottom:12,flexWrap:"wrap",alignItems:"center"}}>
@@ -429,7 +426,7 @@ export default function App() {
         <br/><br/>
         <strong style={{color:"#999"}}>Early data</strong>: Pre-IPO revenue from SEC S-1/F-1 filings, press reports, Wikipedia, Speedwell Research, CNBC. AMD 1971–99 from Wikipedia + FundingUniverse + Encyclopedia.com ($4.6M in 1971, $26.5M in 1974). Cognex 1988 from Encyclopedia.com ($10.6M). Mobileye 2008–13 from F-1 filing via Seeking Alpha ($5M→$81M). Garmin 1991–94 estimated from FundingUniverse (first product 1991, $102M by 1995). Penumbra 2007–12 estimated from S-1 trajectory (first revenue 2007, profitable 2009, $88.8M by 2013). Arista 2008–09 estimated from S-1 ($72M by 2010). Bloom Energy 2014–18 from StockAnalysis/SEC ($248M in 2014, declined to $173M in 2015). Keyence 1997–2010 from IPO filing + DCFmodeling. Planet Labs 2015–20 backcast from SPAC filing. Shield AI 2019–22 estimated from contract announcements. Qualcomm $32M in 1989 (Wikipedia), 1994–2024 from WallStreetZen. Ubiquiti FY2008–25 from StockAnalysis (bootstrapped, FY ends June). Tandem Diabetes 2012–24 from StockAnalysis ($2.5M→$940M). AeroVironment FY2004–06 backcast from S-1 (121% + 33% growth rates), FY2006–24 from StockAnalysis. Roku 2015–16 from S-1 ($320M/$399M). Rivian $0 pre-2021. Generac private until 2010.
         <br/><br/>
-        <strong style={{color:"#999"}}>Sources:</strong> SEC filings, Sacra, Contrary Research, StockAnalysis, WallStreetZen, Yahoo Finance. Employee counts from SEC 10-K filings via StockAnalysis; private cos (SpaceX, DJI, Anduril, Shield AI, Lumafield) from PitchBook, Tracxn, news reports. SpaceX, Anduril, Shield AI & DJI revenue are estimates. NVIDIA FY (ends Jan) mapped to prior CY. Keyence JPY→USD. Ubiquiti FY ends Jun. AeroVironment FY ends Apr.
+        <strong style={{color:"#999"}}>Sources:</strong> SEC filings, Sacra, Contrary Research, StockAnalysis, WallStreetZen, Yahoo Finance. Employee counts from SEC 10-K filings via StockAnalysis; private cos (SpaceX, DJI, Anduril, Shield AI) from PitchBook, Tracxn, news reports. SpaceX, Anduril, Shield AI & DJI revenue are estimates. NVIDIA FY (ends Jan) mapped to prior CY. Keyence JPY→USD. Ubiquiti FY ends Jun. AeroVironment FY ends Apr.
       </div>
     </div>
   );
